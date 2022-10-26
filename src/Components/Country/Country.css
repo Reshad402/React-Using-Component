@@ -1,5 +1,8 @@
 .country{
-    margin: 20px;
+    margin: 10px;
     background-color: rgb(126, 135, 172);
-    height: 80px;
+    /* height: 80px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
 }

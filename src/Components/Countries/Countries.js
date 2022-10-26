@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ShowProps from '../Country/Country';
+import './Countries.css'
 
 const Countries = () => {
     const [countries,setCountries] = useState([])
@@ -12,16 +13,22 @@ const Countries = () => {
            
        }, [])
     return (
-        <div>
+        <div >
             <h3>The Countries are here:{countries.length}</h3>
+
+            <div className='countries-container'>
             {
                 countries.map(country => 
                 <ShowProps 
-                    name={country.name.common} 
-                    population={country.population}
+                            // ! Important for sending all data to the country
+                   country={country}
+                   key={country.cca3}
+                            // ? Unique value for the country
                     >
                 </ShowProps>)
             }
+            </div>
+            
         </div>
     );
 };
