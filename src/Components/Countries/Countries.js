@@ -22,7 +22,7 @@ const Countries = () => {
                 <ShowProps 
                             // ! Important for sending all data to the country
                    country={country}
-                   key={country.cca3}
+                   key={country.ccn3}
                             // ? Unique value for the country
                     >
                 </ShowProps>)
